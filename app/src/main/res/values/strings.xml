@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SpecialEffect</string>
+    <string name="translucent">com.werif.specialeffect.tools.TranslucentBehavior</string>
+    <string name="header">com.werif.specialeffect.tools.TransferHeaderBehavior</string>
+    <string name="desc_one">底部加载</string>
+    <string name="desc_two">横向加载</string>
+</resources>

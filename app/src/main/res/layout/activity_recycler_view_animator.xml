@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".recyclerview_anim.RecyclerViewAnimatorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/recyclerViewBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        android:background="@color/theme"
+        app:titleTextColor="@android:color/white"
+        app:title="RecyclerView Item 加载动画"
+        app:menu="@menu/layout_recyclerview_animation_model"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/animatorList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
