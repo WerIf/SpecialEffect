@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".swiper_vertical.SwipVerticalActivity"></activity>
+        <activity android:name=".custom_view.RulerActivity"></activity>
         <activity
             android:name=".head_move2.HeadMove2Activity"
             android:label="@string/title_activity_head_move2ctivity"

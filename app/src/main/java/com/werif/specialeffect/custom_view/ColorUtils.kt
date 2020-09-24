@@ -1,4 +1,4 @@
-package com.werif.specialeffect.swiper_vertical
+package com.werif.specialeffect.custom_view
 
 import android.graphics.Color
 
@@ -10,9 +10,9 @@ object ColorUtils {
         var redEnd=Color.red(endColor)
         var blueEnd=Color.blue(endColor)
         var greenEnd=Color.green(endColor)
-        var red=(redStart+(redStart-redEnd)*radio+0.5).toInt()
-        var blue=(blueStart+(redStart-blueEnd)*radio+0.5).toInt()
-        var green=(greenStart+(greenStart-greenEnd)*radio+0.5).toInt()
+        var red=(redStart+(redEnd-redStart)*radio+0.5).toInt()
+        var blue=(blueStart+(blueEnd-blueStart)*radio+0.5).toInt()
+        var green=(greenStart+(greenEnd-greenStart)*radio+0.5).toInt()
         return Color.argb(255,red,green,blue)
     }
 }
