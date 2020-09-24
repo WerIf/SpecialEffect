@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.werif.specialeffect.head_move.HeadMoveActivity
+import com.werif.specialeffect.head_move2.HeadMove2Activity
 import com.werif.specialeffect.recyclerview_anim.RecyclerViewAnimatorActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -12,7 +13,8 @@ class MainActivity : AppCompatActivity() {
 
     var dataList= mutableListOf<String>(
         "Behavior",
-        "RecyclerView Animator"
+        "RecyclerView Animator",
+        "HeadMove2"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 "RecyclerView Animator"->{
                     startActivity(Intent(this,RecyclerViewAnimatorActivity::class.java))
+                }
+                "HeadMove2"->{
+                    startActivity(Intent(this, HeadMove2Activity::class.java))
                 }
             }
         }
