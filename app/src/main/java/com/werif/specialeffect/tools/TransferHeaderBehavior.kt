@@ -7,7 +7,8 @@ import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 
-class TransferHeaderBehavior() : CoordinatorLayout.Behavior<ImageView>() {
+class TransferHeaderBehavior(context: Context?,
+                             attrs: AttributeSet?) : CoordinatorLayout.Behavior<ImageView>() {
     /**
      * 处于中心时候原始X轴
      */
