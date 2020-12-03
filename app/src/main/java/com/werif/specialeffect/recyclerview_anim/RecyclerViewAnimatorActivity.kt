@@ -46,9 +46,12 @@ class RecyclerViewAnimatorActivity : AppCompatActivity() {
             return@setOnMenuItemClickListener false
         }
 
-        for(i in 0..20){
-            dataList.add("第$i 项内容")
-        }
+//        for(i in 0..20){
+//            dataList.add("第$i 项内容")
+//        }
+
+        var testMore=TextMore()
+        testMore.load(animatorList,dataList)
 
         animatorList.layoutAnimation=animation
         animatorList.adapter=specialAdapter

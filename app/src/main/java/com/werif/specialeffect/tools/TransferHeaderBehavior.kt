@@ -53,7 +53,6 @@ class TransferHeaderBehavior(context: Context?,
         if (x <= child.width) {
             x = child.width.toFloat()
         }
-        // TODO 头像的放大和缩小没做
         child.x = x
         child.y = mOriginalHeaderY - mOriginalHeaderY * mPercentY
         return true
